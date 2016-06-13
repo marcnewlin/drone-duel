@@ -45,10 +45,10 @@ cd ..
 
 #### 3. Fly, fly away! (Pair with a drone and cause it to fly away)
 ```
-sudo ./fly-fly-away.py 
+sudo ./fly-fly-away.py -l -v
 ```
 
 #### 4. Rain from the sky! (Hijack a drone in-flight and cause it to come crashing to the ground) 
 ```
-sudo ./rain-from-the-sky.py
+sudo ./rain-from-the-sky.py -l -v
 ```
