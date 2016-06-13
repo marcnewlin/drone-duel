@@ -33,6 +33,7 @@ def fly_fly_away(vid):
     while True:
         if time.time() - start > 10:
             break
+        # address is tone
         common.radio.transmit_payload_generic(
             packet_bytes, address='\xFF\xFF\xFF\xFF\xFF')
 
@@ -54,6 +55,7 @@ def pair_drone():
 
             # Transmit a "pairing sync" packet
             logging.debug('Searching')
+            # address is tone
             common.radio.transmit_payload_generic(
                 sync_packet, address='\xFF\xFF\xFF\xFF\xFF')
 
@@ -96,6 +98,7 @@ def pair_drone():
 
             # Transmit a response packet
             logging.debug('Responding')
+            # address is tone
             common.radio.transmit_payload_generic(
                 response_packet, address='\xFF\xFF\xFF\xFF\xFF')
 

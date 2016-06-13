@@ -45,6 +45,7 @@ def rain_from_the_sky():
                         t1 = time.time()
                         while time.time() - t1 < 3e-3:
                             common.radio.transmit_payload_generic(
+                                # address is tone
                                 pkt_out, address='\xFF\xFF\xFF\xFF\xFF')
                         channel_index += 1
                         channel_index %= 4
